@@ -1,0 +1,672 @@
+        html {
+            font-size: 14px;
+        }
+
+        /*размер шрифта*/
+        body {
+            margin: 2% 8%;
+            /*всё тело*/
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            background: #6C5E78;
+        }
+
+
+        header {
+            display: block;
+            padding: 0;
+            background-color: #D5D9EB;
+            /*хэдер,в нём менюшка*/
+            height: 70px;
+        }
+
+        main {
+            height: auto;
+            /*мэйн размер, цвет*/
+            background: white;
+            padding: 20px;
+        }
+
+        footer {
+            height: 150px;
+            /*футер размер, цвет*/
+            background-color: #27053C;
+            padding: 20px;
+            font-size: 1.3em;
+        }
+
+        div {
+            padding: 0
+        }
+
+        p {
+            text-indent: 20px;
+            font-family: monospace
+        }
+
+        nav {
+            padding: 0
+        }
+
+        ul {
+            list-style: none;
+            /*убираем маркеры списка*/
+            margin: 0;
+            /*убираем верхнее и нижнее поле, равное 1em*/
+
+        }
+
+        li footer {
+            text-decoration: none;
+            text-decoration-color: white;
+        }
+
+        a {
+            display: inline-block;
+            height: 70px;
+            text-decoration: none;
+            /*убираем подчеркивание текста ссылок*/
+            transition: .2s linear;
+        }
+
+        .pad-a {
+            padding: 0.6em 1em 0 1em;
+        }
+
+        /*нужно сменить цвета*/
+        }
+
+        a:visited {
+            color: black;
+            text-decoration-line: none;
+        }
+ 
+        il {
+            display: inline-flex;
+            float: right;
+            /*тупо положение*/
+            border-left: 1px solid #B7A2D8;
+        }
+
+         h1 {
+            text-indent: 20px;
+            font-size: 1.5em;
+            font-weight: 1000;
+        }
+
+        footer a {
+            padding: 0;
+            /*убираем подчеркивание текста ссылок*/
+            transition: .2s linear;
+            height: 10px;
+            text-decoration-color: white;
+            text-decoration: none;
+        }
+
+        footer il {
+            text-decoration: none;
+            text-decoration-color: white;
+        }
+
+        button {
+            background: none;
+            border: none;
+            background-color: none;
+            color: none
+        }
+
+
+        .col-h-right {}
+
+        .tex-main {
+            font-size: 1.8rem
+        }
+
+        .one a {
+            font-size: 2rem;
+            color: #190D2A;
+            /*нужно сменить цвета*/
+            background: ;
+            /*нужно сменить цвета*/
+        }
+
+        .one a:hover {
+            background: #B98AFF
+        }
+
+        /*нужно сменить цвета*/
+        .one li {
+            display: flex;
+            background: #7A0A93;
+            /*нужно сменить цвета*/
+            align-content: center;
+            justify-content: center;
+        }
+
+        .home {
+            margin-right: 30px;
+            /*это наверное для иконки ну и что-бы кнопку HOME выделить*/
+        }
+
+        .pad-h {
+            padding: 0.6em 1.3em 0 1.3em
+        }
+
+        .pad-th {
+            padding: 0.6em 0.9em 0 0.9em
+        }
+
+        .pad-ta {
+            padding: 0.6em 1em 0 1em
+        }
+
+        .pad-te {
+            padding: 0.6em 1em 0 1em
+        }
+
+        /*   -- https://html5book.ru/gorizontalnoe-menu/ --  */
+
+        .learning {
+            background: #D5D9EB;
+            height: 50px;
+            text-align: center;
+            font-size: 1.8em;
+            margin-top: 60px;
+            margin-bottom: 30px
+        }
+
+
+
+
+
+        /*КАРТИНКИ*/
+
+        .pic-book-purpl {
+
+            width: 140px
+        }
+
+        .pic-lamp-purp {
+            max-width: 350px;
+            float: right;
+            margin-top: 3%
+        }
+
+        .pic-inst-purp {
+            width: 50px;
+            margin-left: 10px
+        }
+
+
+        .purp-head {
+            padding: 0;
+        }
+
+
+
+
+
+        /*КОЛОНКИ ХЭДЕРА*/
+
+        .col-h-left {
+            float: left;
+            width: 30%;
+            padding-top: 5px;
+            padding-left: 20px
+        }
+
+        .col-h-right {
+            text-align: right;
+            float: right;
+            width: 70%;
+        }
+
+
+
+        /*КОЛОНКИ ФУТЕРА*/
+
+        .col-f-left {
+
+            text-align: left;
+            float: left;
+            width: 30%;
+        }
+
+        .col-f-center {
+            text-align: center;
+            float: left;
+            width: 20%;
+
+        }
+
+        .col-f-right {
+
+            text-align: right;
+            float: right;
+            width: 45%;
+
+        }
+
+
+
+
+        /*ШРИФТЫ*/
+
+        @font-face {
+            font-family: 'Prosto One';
+            src: url(Diary/fonts/ProstoOne-Regular.ttf) format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'NewsCycle';
+            src: url(Diary/fonts/NewsCycle.ttf) format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  
+  src: local("Roboto"),
+       /* Если не получилось, загрузит woff2 */
+       url(Diary/fonts/Roboto.ttf") format('truetype'),
+       /* Если браузер не поддерживает woff2, загрузит woff */
+       url(Diary/fonts/Roboto.woff") format("woff");
+}
+
+
+
+
+
+
+
+
+        /*МЕДИА РАЗДЕЛ*/
+        @media (min-width:1600px) {
+            .pic-lamp-purp {
+                margin-top: 1%
+            }
+        }
+
+        @media (max-width:1440) {
+            footer {
+                font-size: 1.45em;
+            }
+
+            .pic-inst-purp {
+                margin-top: -10px;
+
+            }
+        }
+
+
+        @media (max-width:1200px) {
+
+            footer {
+                font-size: 1.4em;
+            }
+
+            .pad-h {
+                padding: 0.6em 0.9em 0 1.2em
+            }
+
+            .pad-th {
+                padding: 0.6em 0.9em 0 0.9em
+            }
+
+            .pad-ta {
+                padding: 0.6em 1em 0 1em
+            }
+
+            .pad-te {
+                padding: 0.6em 1em 0 1em
+            }
+        }
+
+        @media (max-width:1024px) {
+            footer {
+                height: 150px
+            }
+
+            .pic-inst-purp {
+                margin-top: -10px;
+            }
+
+            .col-h-left {
+                width: 20%;
+                padding-left: 20px
+            }
+
+            .col-h-right {
+                width: 80%;
+            }
+        }
+
+        @media (width:992px) {
+            .col-h-left {
+                float: left;
+                left: 20%;
+                width: 15%;
+                padding-left: 20px;
+
+            }
+
+            .col-h-right {
+                width: 85%;
+                margin-right:
+            }
+        }
+
+        @media (max-width:991px) {
+            body {
+                margin-top: 0;
+                margin-bottom: 0;
+                margin-left: 2%;
+                margin-right: 2%
+            }
+
+            .col-h-left {
+                float: left;
+                left: 20%;
+                width: 15%;
+                padding-left: 20px;
+                margin-left: -15%
+            }
+
+            .col-h-right {
+                width: 85%;
+                margin-right: -15%
+            }
+
+            .pic-book-purpl {
+                display: inline;
+
+
+            }
+
+
+        }
+
+        @media (max-width:960px) {
+            .col-h-left {
+                margin-left: -8%
+            }
+
+            .col-h-right {
+                margin-right: -10%
+            }
+
+            .home {
+                margin-right: 15px;
+                /*это наверное для иконки ну и что-бы кнопку HOME выделить*/
+            }
+
+        }
+
+
+        @media (max-width: 854px) {
+            footer {
+                height: 160px
+            }
+
+            .home {
+                margin-right: 20px;
+                /*это наверное для иконки ну и что-бы кнопку HOME выделить*/
+            }
+
+            .col-h-left {
+                margin-left: -3%
+            }
+
+            .col-h-right {
+                margin-right: -5%
+            }
+
+            .pic-lamp-purp {
+                max-width: 300px;
+                float: right;
+                margin-top: 0
+            }
+
+            .tex-main {
+                font-size: 1.5rem
+            }
+        }
+
+        @media (max-width: 768px) {
+            footer {
+                height: 200px
+            }
+
+            nav {
+                float: right
+            }
+
+            il {
+                width: 25%;
+                border: 0;
+            }
+
+            .pic-book-purpl {
+                display: none
+            }
+
+            body {
+                margin: 0 2% 0 2%;
+                /*всё тело*/
+            }
+
+            .col-h-left {
+                width: 0
+            }
+
+            .col-h-right {
+                width: 100%;
+                margin-right: 10%
+            }
+
+            .home {
+                margin-right: 0
+            }
+
+
+
+            .pad-h {
+                padding: 0.6em 1.4em 0 1.4em
+            }
+
+            .pad-th {
+                padding: 0.6em 0.9em 0 0.9em
+            }
+
+            .pad-ta {
+                padding: 0.6em 1.08em 0 1.08em
+            }
+
+            .pad-te {
+                padding: 0.6em 1.08em 0 1.08em
+            }
+
+            .pic-lamp-purp {
+                max-width: 280px;
+                margin-top:
+            }
+
+        }
+
+
+        @media (max-width: 767px) {
+            .col-h-right {
+
+                margin-top: -5px;
+                margin-right: 0
+            }
+
+            .pad-h {
+                padding: 0.6em 1.4em 0 0.5em
+            }
+
+            .pad-th {
+                padding: 0.6em 1.4em 0 0
+            }
+
+            .pad-ta {
+                padding: 0.6em 1.4em 0 0
+            }
+
+            .pad-te {
+                padding: 0.6em 1.4em 0 0
+            }
+
+            .home {
+                margin: 0
+            }
+        }
+
+        @media(max-width:660px) {
+            .pic-lamp-purp {
+                max-width: 250px
+            }
+        }
+
+        @media (max-width: 640px) {
+            footer {
+                padding: 3%
+            }
+
+            .col-f-left {
+                width: 20%;
+            }
+
+            .col-f-right {
+                width: 55%
+            }
+
+            .pic-lamp-purp {
+                max-width: 220px
+            }
+
+        }
+
+        @media (max-width: 600px) {
+            .pic-lamp-purp {
+                max-width: 35%;
+                float: right;
+            }
+
+        }
+
+        @media (max-width: 535px) {
+            .pic-lamp-purp {
+                max-width: 148px;
+
+            }
+        }
+
+        @media (max-width: 512px) {
+            footer {
+                font-size: 1em
+            }
+
+            .pic-lamp-purp {
+                max-width: 90px;
+                margin-left: -50%
+            }
+
+        }
+
+        @media (max-width: 425px) {
+            body {
+                margin: 0;
+            }
+
+            footer {
+                font-size: 1em;
+            }
+
+            .pad-h {
+                padding: 0.6em 0 0 0.7em
+            }
+
+            .pic-inst-purp {
+
+                margin-top: 0;
+            }
+
+            .pic-lamp-purp {
+                display: none
+            }
+        }
+
+        @media (max-width: 375px) {
+            footer {
+                font-size: 0.95em;
+            }
+
+            .pad-h {
+                padding: 0.6em 0 0 0.5em
+            }
+
+            .pic-lamp-purp {
+                display: none
+            }
+            
+            
+            body{display: block;}
+        }
+
+        @media (max-width: 320px) {
+
+            body {
+                margin-right: 0;
+                padding: 0
+            }
+
+            h1 {
+                font-size: 3.5rem
+            }
+
+            h1 {
+                text-indent: 0
+            }
+           
+            footer {
+                font-size: 0.9em;
+            }
+
+            .pad-h {
+                padding: 0.6em 0 0 0.5em
+            }
+
+            .col-f-left {
+                width: 50%;
+                float: left
+            }
+
+            .col-f-center {
+                width: 50%;
+                float: right;
+            }
+
+            .pic-inst-purp {
+                width: 30px;
+            }
+
+            .pic-inst-purp-2 {
+                float: right;
+                margin-top: -40px;
+                margin-right: -10px
+            }
+
+            .col-f-right {
+
+                float: none;
+                width: 100%;
+                text-align: center
+            }
+        }
